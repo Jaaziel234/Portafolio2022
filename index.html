@@ -338,6 +338,7 @@
       <p>
         <label>Message: <textarea name="message"></textarea></label>
       </p>
+      
       <p>
         <button type="submit">Send</button>
       </p>
@@ -380,6 +381,7 @@
       <div class="col-lg-8 mt-5 mt-lg-0">
 
         <form name="contact" method="POST" data-netlify="true">
+          
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" class="form-control" name="name" placeholder="Nombre"/>
@@ -403,11 +405,14 @@
             <textarea class="form-control" rows="5" placeholder="Mensaje..." name="message"></textarea>
           </div>
 
+          <div data-netlify-recaptcha="true"></div>
+          
           <div class="button mt-3">
             <button class="btn btn-primary" type="submit">Enviar</button>
-          </div>
-          
+          </div>          
         </form>
+        
+
 
       </div>
 
