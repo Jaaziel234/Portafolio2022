@@ -319,10 +319,108 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- Final Servicios Seccion-->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- ======= Seccion de contactos ======= -->
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="row mt-1">
+
+      <div class="col-lg-4">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>info@example.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 5589 55488 55s</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-8 mt-5 mt-lg-0">
+
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="name" placeholder="Nombre"/>
+            </div>
+
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" placeholder="Correo"/>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label>Su rol: <select class="form-control" name="role[]" multiple>
+              <option value="Reclutador">Reclutador/a</option>
+              <option value="Docente">Docente</option>
+              <option value="Visitante">Visitante</option>
+            </select></label>
+          </div>
+
+      
+          <div class="form-group mt-3">
+            <textarea class="form-control" rows="5" placeholder="Mensaje..." name="message"></textarea>
+          </div>
+
+          <div class="button mt-3">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+          
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+
+
+
+<!-- 
+   <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -349,7 +447,7 @@
 
         </div>  
       </div>
-    </section><!-- End Contact Section -->
+    </section>  -->
 
   </main><!-- End #main -->
 
@@ -387,8 +485,6 @@
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  
 
 </body>
 
